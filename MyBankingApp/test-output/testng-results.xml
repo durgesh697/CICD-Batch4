@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35" started-at="2020-07-25T06:47:17Z" finished-at="2020-07-25T06:47:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35" started-at="2020-07-25T06:47:17Z" finished-at="2020-07-25T06:47:17Z">
+      <class name="com.cg.test.BankAppTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cg.test.BankAppTest@3dd3bcd]" name="setUp" is-config="true" duration-ms="28" started-at="2020-07-25T12:17:16Z" finished-at="2020-07-25T12:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkAccountInformation()[pri:0, instance:com.cg.test.BankAppTest@3dd3bcd]" name="checkAccountInformation" duration-ms="8" started-at="2020-07-25T12:17:17Z" finished-at="2020-07-25T12:17:17Z">
+          <exception class="com.cg.test.MinimumBalanceException">
+            <message>
+              <![CDATA[Minimum balance must be 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.cg.test.MinimumBalanceException: Minimum balance must be 1000
+	at com.cg.service.BankServiceImpl.createAccount(BankServiceImpl.java:15)
+	at com.cg.test.BankAppTest.checkAccountInformation(BankAppTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.cg.test.MinimumBalanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAccountInformation -->
+        <test-method status="PASS" signature="checkCustomerId()[pri:0, instance:com.cg.test.BankAppTest@3dd3bcd]" name="checkCustomerId" duration-ms="7" started-at="2020-07-25T12:17:17Z" finished-at="2020-07-25T12:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCustomerId -->
+        <test-method status="PASS" signature="checkCustomerInfo()[pri:0, instance:com.cg.test.BankAppTest@3dd3bcd]" name="checkCustomerInfo" duration-ms="1" started-at="2020-07-25T12:17:17Z" finished-at="2020-07-25T12:17:17Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Enter Proper Customer info]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Enter Proper Customer info
+	at com.cg.service.BankServiceImpl.createAccount(BankServiceImpl.java:13)
+	at com.cg.test.BankAppTest.checkCustomerInfo(BankAppTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCustomerInfo -->
+      </class> <!-- com.cg.test.BankAppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
